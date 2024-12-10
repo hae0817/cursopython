@@ -1,35 +1,41 @@
-a = 4
-b = 2
+# Practicando operaciones básicas
+a = 10
+b = 3
 
-suma = a + b
-print(suma)
+print("Suma:", a + b)
+print("Resta:", a - b)
+print("Multiplicación:", a * b)
+print("División:", a / b)
+print("División Entera:", a // b)
+print("Potencia:", a ** b)
+print("Módulo:", a % b)
 
-resta = a - b
-print(resta)
+# Ejemplos de precedencia de operaciones matemáticas
 
-multiplicacion = a * b
-print(multiplicacion)
+# Paréntesis tienen la mayor precedencia
+expresion1 = (2 + 3) * 5
+print("Paréntesis: (2 + 3) * 5 =", expresion1)
 
-division = a / b
-print(division)
+# Exponentes
+expresion2 = 2 ** 3 * 4
+print("Exponentes: 2 ** 3 * 4 =", expresion2)
 
-resto = a % b
-print(resto)
+# Multiplicación y división se evalúan de izquierda a derecha
+expresion3 = 16 / 4 * 2
+expresion4 = 16 * 2 / 4
+print("Multiplicación y división: 16 / 4 * 2 =", expresion3)
+print("Multiplicación y división: 16 * 2 / 4 =", expresion4)
 
-exponente = a ** b
-print(exponente)
+# Adición y sustracción se evalúan de izquierda a derecha
+expresion5 = 10 - 3 + 2
+expresion6 = 10 + 3 - 2
+print("Adición y sustracción: 10 - 3 + 2 =", expresion5)
+print("Adición y sustracción: 10 + 3 - 2 =", expresion6)
 
-cociente = a // b 
-print(cociente)
+# Combinación de operaciones
+expresion7 = (5 + 3) ** 2 - 3 * 2 + 8 / 2
+print("Combinada: (5 + 3) ** 2 - 3 * 2 + 8 / 2 =", expresion7)
 
-#Probando exponente con números negativos
-exponente_a = -2 ** b
-print(exponente_a)
-exponente_b = (-2) ** b
-print(exponente_b)
-
-#Probando la pérdida de precisión
-c = 0.0000000001
-d = 1000000000
-resultado = d + c
-print(resultado)
+# Más ejemplos complejos
+expresion8 = 2 + 3 * 4 ** 2 / (1 + 1)
+print("Compleja: 2 + 3 * 4 ** 2 / (1 + 1) =", expresion8)
